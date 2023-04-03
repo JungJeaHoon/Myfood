@@ -1,0 +1,274 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {margin: 0; padding: 0;
+}
+body { 
+    font-family: 'Chosunilbo_myungjo';   
+    font-size:15px;
+    line-height:1.5;
+    box-sizing: border-box;
+}
+a {color:#000;}
+li { list-style: none;}
+
+
+/************ top ***************/
+
+
+.top_flex {
+}
+.top_wrap {  
+    width: 100%; 
+    height: 68px;
+    background:#fff;
+    position:fixed;
+    top:0;  
+    z-index: 100;
+    font-family: 'Chosunilbo_myungjo';
+}
+.top_wrap .top {
+    display:flex;
+    justify-content:space-between;
+    max-width:1200px;
+    margin:auto;
+    font-size: 24px;    
+    line-height:66px;
+}
+
+.burger:hover  {
+    background: rgb(220, 216, 216)
+}   
+
+
+
+/************ main ***************/
+
+
+.main {
+    max-width:1300px;
+    margin: auto;
+    padding-top:100px;
+}
+.main .food1 {
+    width: 1300px;
+    height: 623px;    
+    display: flex;
+    overflow: hidden;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.main .food1 .quarter{    
+    width: 25%;
+    text-align: center;
+    padding: 0 8px;
+}
+.main .food1 .quarter img {
+    width: 100%;
+    height: 408px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.main .food1 .quarter h3 {
+    font-weight: 400;
+    font-size: 26px;
+    margin: 0 0 10px 0;
+}
+
+.main .food2 {
+    width: 1300px;
+    height: 623px;    
+    display: flex;
+    overflow: hidden;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.main .food2 .quarter{    
+    width: 25%;
+    text-align: center;
+    padding: 0 8px;
+    overflow: hidden;
+}
+.main .food2 .quarter h3 {
+    font-weight: 400;
+    font-size: 26px;
+    margin: 0 0 10px 0;
+}
+.main .food2 .quarter img {
+    width: 100%;
+    height: 408px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.number {    
+    width: 1300px;
+    text-align: center;   
+}
+.num_bar >a {
+    padding:10px 12px;
+}
+.num_bar >a:nth-child(2) {
+    padding:10px 12px;
+    background: #000;
+    color:#fff;
+}
+
+.number .num_bar > a:hover {
+    background: #000;
+    color:#fff;
+} 
+.num_bar >a>i {
+    font-size:11px
+}
+hr {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    color:#eee;
+    opacity: 0.4;
+}
+.foodMan {
+    width: 1300px;    
+    text-align: center;
+}
+.foodMan >h3 {
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.man_txt > h4 {
+    margin: 30px 0 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.man_txt > h6 {
+    margin: 20px 0;
+}
+.man_txt > h6 > em {
+    font-style: italic;
+}
+.man_txt > p {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 1137px;
+    margin: auto;
+}
+
+/************ footer ***************/
+
+footer {
+    width: 1170px;
+    margin: auto;
+    display: flex;    
+    padding-bottom: 40px;
+}
+footer > div {
+    flex:1;
+    padding: 15px;
+}
+.footer > h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.footer > p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footer > p > a {
+    text-decoration: underline;
+}
+.blog_posts {}
+.blog_posts > h3{
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.blog_posts .blog {}
+.blog_posts .blog >.blog_li{
+    padding: 13px 16px;
+    border-bottom: 1px solid #ddd;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.blog_posts .blog >.blog_li:last-child {
+    border-bottom: none;
+}
+.blog_li > img {
+    width: 50px;
+    height: 50px;
+    margin-right: 16px
+}
+.li_bold{
+    font-size: 20px;
+    display: block;
+}
+.blog_li > div {
+    float: right;
+    width: 77%;
+}
+.popular {}
+.popular > h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.popular p {}
+.popular span {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 14px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    background: #7b7b7b;
+    color:#fff;
+}
+.popular span:first-child {
+    background: #000;
+    color:#fff;
+    padding: 3px 10px;;
+}
+
+
+
+
+/*모바일 500*/
+
+
+@media  (max-width: 600px){
+    .main {
+        max-width: 600px;
+        margin: auto;
+    }
+    .main .food1 {
+        height:auto;
+        width: 600px;
+        display: block;
+
+
+    }   
+    .main .food1 .quarter  {
+        width: 600px;        
+        padding: 0 25px;
+        display: block;
+
+
+    }
+    .main .food2 .quarter > img {
+        display: block;
+        height: 775px;
+        width: 600px;
+    }
+    .main .food2 .quarter > p {}
+}
+    
+
+
